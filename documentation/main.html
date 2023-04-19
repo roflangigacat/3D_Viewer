@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script href="to_the_top.js"></script>
+  <title>Main window</title>
+</head>
+
+<body>
+  <div class="shadow">
+    <!-- Навигационная панелька -->
+    <header>
+      <div class="nav-panel">
+        <div class="tab current-tab"><a class="disabled-href" href="main.html">Основная информация</a></div>
+        <div class="tab"><a href="use.html">Инструкция пользователя</a></div>
+        <div class="tab"><a href="gifscreensave.html">Дополнительные настройки</a></div>
+      </div>
+    </header>
+    <!-- Тело -->
+    <div class="wrapper">
+      <h1>3D Viewer v1.0</h1>
+      <hr>
+      <h2>Общая информация</h2>
+      <p>Над проектом работали:</p>
+      <p> - romildab@student.21-school.ru - реализация парсера для .obj файлов<p>
+      <p> - shanelac@student.21-school.ru - front часть проекта, дизайн и запись гифок</p>    
+      <p> - tandrasc@student.21-school.ru - работа с openGL, своя реализация аффинных преобразований</p>
+      <p>Подробное описание всего функционала можно найти в <strong>оглавлении</strong>.</p>
+    </div>
+  </div>
+  <button onclick="scrollToTheTop()" class="to-the-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-arrow-up">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg></button>
+</body>
+
+</html>

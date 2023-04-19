@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1493</width>
+    <height>808</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(225, 224, 226), 
+                            stop: 1  rgb(104, 108, 104));
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,1">
+    <item>
+     <widget class="Abduzhalilov3D" name="GLWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="13" column="0">
+       <widget class="QLabel" name="MoveX">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QDoubleSpinBox" name="MoveYButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="2" colspan="2">
+       <widget class="QComboBox" name="EdgeTypeButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Сплошная</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Пунктирная</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="17" column="2" colspan="2">
+       <widget class="QComboBox" name="EdgeColorButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Белые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Черные</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Красные</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синие</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Голубые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Розовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Оранжевые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Бордовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Серые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кобальтовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Веронские</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морской волны</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сольферино</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="11" column="0" colspan="2">
+       <widget class="QLabel" name="BackgroundText">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Цвет фона:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="QLabel" name="RotationX">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="2" colspan="2">
+       <widget class="QComboBox" name="PeakColorButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Белые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Черные</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Красные</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синие</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Голубые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Розовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Оранжевые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Бордовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Серые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кобальтовые</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Веронские</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морской волны</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сольферино</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="23" column="2" colspan="2">
+       <widget class="QSlider" name="PeakSizeButton">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);
+
+ QSlider::groove:horizontal {
+     border: 1px solid #999999;
+     height: 8px; /* по умолчанию бороздка расширяется до размеров ползунка. задав высоту она принимает фиксированный размер */
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background: rgb(150, 29, 35);
+     border: 1px solid #5c5c5c;
+     width: 18px;
+     margin: -2px 0; /* рукоятка располагается по умолчанию в прямоугольнике содержимого бороздки. Расширяется наружу от бороздки */
+     border-radius: 3px;
+ }</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2" colspan="2">
+       <widget class="QLabel" name="CountOfVertexes">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0" colspan="2">
+       <widget class="QLabel" name="PeakColor">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Цвет:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QLabel" name="ErrorLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);
+color: rgb(217, 86, 81)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="0" colspan="4">
+       <widget class="QPushButton" name="WriteGIFButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="text">
+         <string>Записать GIF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0" colspan="2">
+       <widget class="QLabel" name="EdgeColor">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Цвет:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="2" colspan="2">
+       <widget class="QComboBox" name="PeakColorType">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отсутствует</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Круг</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Квадрат</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="12" column="2" colspan="2">
+       <widget class="QLabel" name="Rotation">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Вращение</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QLabel" name="CountOfFacetsName">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Количество ребер:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2" colspan="2">
+       <widget class="QComboBox" name="ProjectionButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Центральная</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Параллельная</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="15" column="3">
+       <widget class="QDoubleSpinBox" name="RotationZButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="3">
+       <widget class="QDoubleSpinBox" name="RotationYButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="2">
+       <widget class="QLabel" name="Projection">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Проекция:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0" colspan="2">
+       <widget class="QLabel" name="Move">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Движение</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0" colspan="2">
+       <widget class="QLabel" name="EdgeSize">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Толщина:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0" colspan="4">
+       <widget class="QLabel" name="Edge">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Рёбра</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="0" colspan="4">
+       <widget class="QLabel" name="Peak">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Вершины</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="3">
+       <widget class="QDoubleSpinBox" name="RotationXButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0" colspan="2">
+       <widget class="QLabel" name="PeakSize">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Толщина:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="0" colspan="2">
+       <widget class="QLabel" name="PeakType">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Тип:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="MoveZ">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2" colspan="2">
+       <widget class="QLabel" name="CountOfFacets">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" colspan="2">
+       <widget class="QLabel" name="FileName">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QDoubleSpinBox" name="MoveZButton">
+        <property name="styleSheet">
+         <string notr="true"> background-color: rgb(226, 153, 56);
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2" colspan="2">
+       <widget class="QComboBox" name="BackgroundColorButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Черный</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Белый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Голубой</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Розовый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Оранжевый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Бордовый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Серый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кобальтовый</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Веронский</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морской волны</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сольферино</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="19" column="2" colspan="2">
+       <widget class="QSlider" name="EdgeSizeButton">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);
+
+QSlider::groove:horizontal {
+     border: 1px solid #999999;
+     height: 8px; /* по умолчанию бороздка расширяется до размеров ползунка. задав высоту она принимает фиксированный размер */
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background: rgb(150, 29, 35);
+     border: 1px solid #5c5c5c;
+     width: 18px;
+     margin: -2px 0; /* рукоятка располагается по умолчанию в прямоугольнике содержимого бороздки. Расширяется наружу от бороздки */
+     border-radius: 3px;
+ }</string>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="singleStep">
+         <number>3</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QLabel" name="CountOfVertexesName">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Количество точек:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2" colspan="2">
+       <widget class="QDoubleSpinBox" name="ScaleButton">
+        <property name="toolTipDuration">
+         <number>-1</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0" colspan="2">
+       <widget class="QLabel" name="EdgeType">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Тип:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="2">
+       <widget class="QLabel" name="RotationY">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0" colspan="2">
+       <widget class="QLabel" name="Scale">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Масштаб:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="0" colspan="4">
+       <widget class="QPushButton" name="SaveButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="text">
+         <string> Сохранить</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="MoveY">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="2">
+       <widget class="QLabel" name="RotationZ">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="FileNameName">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Имя файла:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="4">
+       <widget class="QPushButton" name="DownloadButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;
+
+
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Загрузить</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QDoubleSpinBox" name="MoveXButton">
+        <property name="styleSheet">
+         <string notr="true">background: QLinearGradient(x1: 0, y1: 0, 
+                            x2: 0, y2: 1, 
+                            stop: 0 rgb(255, 173, 64), 
+                            stop: 1  rgb(186, 126, 47));
+ border-style: solid;
+ border-width:2px;
+ border-color: black;</string>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0" colspan="4">
+       <widget class="QCheckBox" name="SaveSettings">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>            Сохранить настройки</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1493</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Abduzhalilov3D</class>
+   <extends>QOpenGLWidget</extends>
+   <header>abduzhalilov3d.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

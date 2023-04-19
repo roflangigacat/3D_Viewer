@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <script src="to_the_top.js"></script>
+  <title>User guide</title>
+</head>
+
+<body>
+  <div class="shadow">
+    <!-- Навигация -->
+    <header>
+      <div class="nav-panel">
+        <div class="tab"><a href="main.html">Общая информация</a></div>
+        <div class="tab current-tab"><a class="disabled-href" href="use.html">Инструкция пользователя</a></div>
+        <div class="tab"><a href="gifscreensave.html">Дополнительные настройки</a></div>
+      </div>
+    </header>
+    <!-- Тело -->
+    <div class="wrapper">
+      <h1>3DViewer</h1>
+      <h2>Оглавление</h2>
+      <ol>
+        <li><a href="#realize">Реализация</a>
+        <li><a href="#graf_int">Графический интерфейс</a></li>
+      </ol>
+      <hr>
+      <h2 id="realize">
+        1. Реализация
+      </h2>
+      <p>Программа разработана для визуализации каркасной модели в трехмерном пространстве:</p>
+      <p>Программа разработана на языке <span class="lexem">C</span> с использованием библиотеки <span class="lexem">Qt</span>
+      <p>Сборка и установка программы происходит при помощи <span class="lexem">Makefile</span> целью <span class="lexem">Install</span> на рабочий стол пользователя.<p>
+      <p>В один момент времени может быть только одна модель на экране.</p>
+      <h3 id="lexems">Программа предоставляет возможность:</h3>
+      <ul>
+        <li>Загружать каркасную модель из файла формата obj (поддержка только списка вершин и поверхностей)</li>
+        <li>Перемещать модель на заданное расстояние относительно осей X, Y, Z</li>
+        <li>Поворачивать модель на заданный угол относительно своих осей X, Y, Z</li>
+        <li>Масштабировать модель на заданное значение</li>
+      </ul>
+      <h3 id="lexems">Графический пользовательский интерфейс содержит:</h3>
+      <ul>
+        <li>Кнопку для выбора файла с моделью и поле для вывода его названия</li>
+        <li>Зону визуализации каркасной модели</li>
+        <li>Кнопки и поля ввода для перемещения, поворота и масштабирования модели.</li>
+        <li>Информацию о загруженной модели - название файла, кол-во вершин и ребер</li>
+        <li>Кнопку для выбора файла с моделью и поле для вывода его названия</li>
+        <li>Кнопку, позволяющую настраивать тип проекции (параллельная и центральная)</li>
+        <li>Кнопки для настройки типа (сплошная, пунктирная), цвета и толщины ребер, способа отображения (отсутствует, круг, квадрат), цвета и размера вершин</li>
+        <li>Кнопку для изменения цвета фона</li>
+        <li>Кнопки для сохранение скриншотов модели и записи GIF-анимации (640x480, 10fps, 5s)</li>
+      </ul>
+      <p><strong>Есть возможность сохранения всех настроек после перезапуска, для этого необходимо поставить "галочку" на <span class="lexem">Сохранение настроек</span></strong></p>
+      <h2 id="graf_int">2. Графический интерфейс</h2>
+      <img src="./ss/user_interface.png" alt="image1">
+      <p><strong>Все активные зоны обозначены цифрами (1-5)</strong></p>
+      <p>Первая зона - <strong>Информация об объекте</strong> - окно, где выводится подробная информация об загруженной модели:
+        показывается имя файла, количество вершин(точек) и ребер.</p>
+      <p>Вторая зона - <strong>Загрузка файла</strong> - открывает проводник и позволяет загрузить файлы из модели только с расширением .obj. Помимо этого реализован drag & drop, позволяющий просто
+        перетянуть любой файл в программу, если будет выбран не корректный формат файла, появится ошибка.</p>
+      <p>Третья зона - <strong>Настройки</strong> - позволяет выбирать цвет ребер, фона, размер точек, тип проекции и все остальное описаное выше.</p>
+      <p>Четвертая зона - <strong>Сохранение</strong> - если поставить "галочку", то после перезапуска все выбранные настройки будут применены повторно.</p>
+      <p>Пятая зона - <strong>GIF & Screenshot</strong> - описание во вкладке <strong>Дополнительные настройки</strong>.</p>
+    </div>
+  </div>
+  <button onclick="scrollToTheTop()" class="to-the-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-arrow-up">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg></button>
+</body>
+
+</html>
