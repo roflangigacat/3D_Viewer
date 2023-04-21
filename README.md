@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=1D122A&background=FF98E600&lines=3D_Viewer+v1.0)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&width=435&lines=3D+Viewer+v1.0)](https://git.io/typing-svg)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=F7B044&background=FF98E600&width=750&lines=Application+for+viewing+3d+images+in+obj+format)](https://git.io/typing-svg)
 

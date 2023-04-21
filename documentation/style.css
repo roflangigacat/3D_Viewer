@@ -1,5 +1,5 @@
 :root {
-    --background-color: #DDBEAA;
+    --background-color: #1d5265;
     --wrapper-background-color: #E5E3E4;
     --href-hover-color: #5BA199;
     --tab-color: var(--background-color);
@@ -45,9 +45,6 @@ a {
     color: black;
 }
 
-a:hover {
-    color: var(--href-hover-color);
-}
 
 a:active {
     text-decoration: none;
@@ -124,11 +121,14 @@ a:active {
 }
 
 .tab {
-    background-color: var(--tab-color);
-    width: 100%;
-    margin: -20px;
-    padding-top: 10px;
-    border-radius: 25px 25px 0px 0px;
+    background-color: #E5E3E4;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 .tab>a {
@@ -136,8 +136,9 @@ a:active {
 }
 
 .current-tab {
-    background-color: inherit;
-    z-index: 99;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
 }
 
 .nav-panel {
@@ -151,3 +152,33 @@ a:active {
     font-weight: bold;
     align-items: center;
 }
+
+.underline-one {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: blue; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
